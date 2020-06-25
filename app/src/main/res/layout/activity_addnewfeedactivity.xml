@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addnewfeedactivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:background="@android:color/holo_green_light">
+
+        <ImageView
+            android:id="@+id/userprofileimage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/addnewfeedlogo"></ImageView>
+
+        <TextView
+            android:id="@+id/newfeedtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userprofileimage"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:textFontWeight="700"
+            android:text="Add Your New Feed"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addnewfeedusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout1"
+        android:text="User name"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        android:layout_margin="10dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/newfeedEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addnewfeedusername"
+        android:layout_margin="30dp"
+        android:hint="Enter New Feed"
+        android:textSize="22dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:maxLines="3"
+        android:maxLength="120"></EditText>
+
+    <TextView
+        android:id="@+id/dateEditTextforNewfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newfeedEdittext"
+        android:text="Date : 12/12/2019"
+        android:textAlignment="center"
+        android:textSize="22dp"></TextView>
+
+    <TextView
+        android:id="@+id/timeEditTextforNewfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEditTextforNewfeed"
+        android:text="Time : 12/12/2019"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="22dp"></TextView>
+
+    <Button
+        android:id="@+id/addingNewFeedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeEditTextforNewfeed"
+        android:layout_margin="30dp"
+        android:text="Update Feed"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"></Button>
+
+</RelativeLayout>

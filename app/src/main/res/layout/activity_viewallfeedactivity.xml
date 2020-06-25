@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewallfeedactivity">
+
+    <TextView
+        android:id="@+id/allusertextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All User"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_margin="20dp"></TextView>
+
+    <ListView
+        android:id="@+id/listviewofalluser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allusertextview"></ListView>
+
+</RelativeLayout>

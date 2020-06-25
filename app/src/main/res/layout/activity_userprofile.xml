@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userprofile">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:background="@android:color/holo_orange_light">
+
+        <ImageView
+            android:id="@+id/editbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/editlogo"></ImageView>
+
+        <ImageView
+            android:id="@+id/userprofileimage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/userprofileimage"></ImageView>
+
+        <TextView
+            android:id="@+id/firstnameTextViewinProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userprofileimage"
+            android:layout_marginTop="8dp"
+            android:fontFamily="monospace"
+            android:text="Krishna"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativelayout1"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/nameTextviewinProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text="Name : Krishna Gopal"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/usernameTextviewinProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTextviewinProfile"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text="Username : kgp@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/ageTextviewinProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameTextviewinProfile"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text="Age : 20 year"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativelayout2"
+        android:id="@+id/relativelayout3"
+        android:background="@android:color/holo_blue_dark">
+
+        <GridLayout
+            android:id="@+id/relativeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:columnOrderPreserved="true">
+
+            <RelativeLayout
+                android:id="@+id/addnewfeedButton"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_orange_light">
+
+                <ImageView
+                    android:id="@+id/newfeedlogo"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/addfeedpng">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Feed"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@id/newfeedlogo"
+                    android:textSize="15dp"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewmyfeedButton"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:clickable="true"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_orange_light">
+
+                <ImageView
+                    android:id="@+id/myfeedlogo"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/myfeedpng">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View My Feed"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@id/myfeedlogo"
+                    android:textSize="15dp"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewalluserfeedButton"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:clickable="true"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_orange_light">
+
+                <ImageView
+                    android:id="@+id/allfeedlogo"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/alluserlog">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View All User"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@id/allfeedlogo"
+                    android:textSize="15dp"></TextView>
+
+
+            </RelativeLayout>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/signoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeButton"
+            android:text="Sign Out"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="monospace"></Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

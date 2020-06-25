@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:id="@+id/relativelayout1cl"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/likebutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/liked"></ImageView>
+
+    <TextView
+        android:id="@+id/feedcountTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/fira_mono_bold"
+        android:text="1."
+        android:textColor="@android:color/white"
+        android:textSize="40dp"></TextView>
+
+    <TextView
+        android:id="@+id/feedtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/feedcountTextview"
+        android:fontFamily="@font/fira_mono_bold"
+        android:text="I am too much happy to here "
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedtextview"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/datetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="Date:12/12/2019"></TextView>
+
+        <TextView
+            android:id="@+id/timetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:layout_below="@id/datetextview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Date:12/12/2019"></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
